@@ -1,159 +1,168 @@
-/* App.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-body {
-  background: linear-gradient(60deg, blue, purple);
-  min-height: 100vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(60deg,blue,purple);
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.heading {
-  color: white;
-  font-size: 3.5rem;
-  margin-top: 25px;
+.heading{
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 25px;
 }
 
-.sub-heading {
-  color: rgb(69, 194, 44);
-  font-size: 1.4rem;
+.sub-heading{
+    color: rgb(69, 194, 44);
+    font-size: 1.4rem;
 }
 
-.btn {
-  font-size: 15px;
-  background: linear-gradient(70deg, blue, violet);
-  padding: 12px 25px;
-  margin-top: 25px;
-  cursor: pointer;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  color: white;
-  transform: translateY(0px);
-  box-shadow: 0 0 10px #1e90ff;
-  transition: all 0.6s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.btn{
+    font-size: 15px;
+    background: linear-gradient(70deg,blue,violet);
+    padding: 12px 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    transform: translateY(0px);
+    box-shadow: 0 0 10px #1e90ff;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.btn:hover {
-  box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff;
-  transform: translateY(-10px);
+.btn:hover{
+    box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff;
+    transform: translateY(-10px);
 }
 
-.modal {
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(77, 77, 77, 0.7);
-  transition: all 0.4s;
+.modal{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
 }
 
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background: #fff;
-  width: 500px;
-  max-width: 85%;
-  min-height: 80vh;
-  padding: 1em 2em;
-  border-radius: 20px;
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 85%;
+    min-height: 80vh;
+    padding: 1em 2em;
+    border-radius: 20px;
 }
 
-.modal-content h2 {
-  color: #333;
-  font-size: 2.5em;
-  border-bottom: 4px dotted blue;
+.modal-content h2{
+    color: #333;
+    font-size: 2.5em;
+    border-bottom: 4px dotted blue;
 }
 
-.modal-content .close {
-  position: absolute;
-  top: 9px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  padding: 2px;
-  transition: all 0.3s;
-  cursor: pointer;
+.modal-content .close{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-.modal-content .close:hover {
-  background-color: blue;
-  color: white;
+.modal-content .close:hover{
+    background-color: blue;
+    color: white;
 }
 
-.modal-content input,
-.modal-content textarea {
+.modal-content input{
   width: 100%;
-  font-size: 16px;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  outline: none;
-}
-
-.modal-content textarea {
-  resize: vertical;
-}
-
-.btn-reset,
-.btn-submit {
-  font-size: 15px;
-  background: linear-gradient(70deg, blue, violet);
-  padding: 12px 25px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 20px;
   border: none;
+  font-size: 16px;
+  padding: 12px 12px 12px 0px;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
   outline: none;
-  color: white;
-  transform: translateY(0px);
-  box-shadow: 0 0 10px #1e90ff;
-  transition: all 0.6s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-.btn-reset:hover,
-.btn-submit:hover {
-  box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff;
-  transform: translateY(-10px);
+.modal-content textarea{
+  width: 300px;
+  height: 100px;
+  outline: none;
+  border: 3px solid #ccc;
+  padding: 15px;
+}
+
+.modal-content textarea:focus {
+  border-color: #999;
+}
+
+.btn-reset, .btn-submit {
+    font-size: 15px;
+    background: linear-gradient(70deg,blue,violet);
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    transform: translateY(0px);
+    box-shadow: 0 0 10px #1e90ff;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-reset:hover, .btn-submit:hover{
+    box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff;
+    transform: translateY(-10px);
 }
 
 .btn-reset {
-  background: linear-gradient(70deg, #666, #999);
+    background: linear-gradient(70deg, #666, #999);
 }
+
+/* product card */
 
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
-  margin-top: 30px;
   margin-bottom: 3rem;
   width: 80%;
   max-height: 80vh;
   overflow-y: auto;
+  margin-top: 30px;
 }
 
+/* Product Card */
 .product-card {
   margin: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -166,6 +175,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
+/* Add glow animation on hover */
 .product-card:hover {
   animation: whiteBorderPulse 1.5s infinite alternate;
   transform: translateY(-8px);
@@ -259,11 +269,11 @@ body {
   transform: scale(1.1);
 }
 
-.card-content {
+.card-content{
   padding: 2rem;
 }
 
-.card-content h3 {
+.card-content h3{
   color: white;
   font-size: 1.5rem;
   text-align: center;
@@ -272,27 +282,33 @@ body {
   font-weight: 700;
 }
 
-.card-content p {
+.card-content p{
   color: white;
   font-size: 1.6rem;
   margin-bottom: 5px;
 }
 
-.price-value p {
+.card-content .price-value{
+  color: white;
+  font-size: 1.6rem;
+}
+
+.card-content .price-value p{
   color: rgb(69, 194, 44);
   font-weight: bold;
 }
 
-.info {
+.card-content .info{
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   margin-bottom: 15px;
   text-align: center;
 }
 
-.card-content button {
+.card-content button{
   font-size: 15px;
-  background: linear-gradient(70deg, blue, violet);
+  text-align: center;
+  background: linear-gradient(70deg,blue,violet);
   padding: 8px 19px;
   margin-top: 25px;
   cursor: pointer;
@@ -303,11 +319,12 @@ body {
   transform: translateY(0px);
   box-shadow: 0 0 10px #1e90ff;
   transition: all 0.6s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  margin: auto;
 }
 
-.card-content button:hover {
+.card-content button:hover{
   box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff;
   transform: translateY(-10px);
 }
